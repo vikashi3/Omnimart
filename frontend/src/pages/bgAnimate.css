@@ -1,0 +1,46 @@
+@keyframes backgroundChange {
+  0% { background-image: url('https://img.freepik.com/free-photo/3d-black-friday-celebration_23-2151848872.jpg?t=st=1728277837~exp=1728281437~hmac=9fc2055a91ee97636ecc4791caafb3687fa12da13446920d8f92ad764a215ee5&w=826'); }
+  12% { background-image: url('https://img.freepik.com/free-photo/fast-fashion-concept-with-full-clothing-store_23-2150871300.jpg?t=st=1728277858~exp=1728281458~hmac=960b52d94f588ad2c2bd1cf584e12b391b292377c27bcd719bba741932806005&w=740'); }
+  25% { background-image: url('https://img.freepik.com/free-photo/medium-shot-girl-celebrating-with-gifts_23-2151116773.jpg?t=st=1728277888~exp=1728281488~hmac=c8d4a893577a0e7a9fca6f3517a10eed4f495766e69bcb20d7495c44e53a96b3&w=826'); }
+  38% { background-image: url('https://img.freepik.com/free-photo/fast-fashion-concept-with-full-clothing-store_23-2150871358.jpg?t=st=1728277954~exp=1728281554~hmac=31ccf9b7df47e4753e050b26b6c3aa22492944593b4909c845e1d90feb99bb8b&w=740'); }
+  54% { background-image: url('https://img.freepik.com/free-photo/adult-person-interacting-with-futuristic-delivery-robot_23-2151210984.jpg?t=st=1728278026~exp=1728281626~hmac=14fe8a6666dae905ee2cf9d8933c8641e168e6ea68417f785a94dbfffebbd7c4&w=826'); }
+  68% { background-image: url('https://img.freepik.com/free-photo/christmas-celebration-with-gift_23-2151085038.jpg?t=st=1728277720~exp=1728281320~hmac=60dd96cfe2a0699a36bb5a7e379b37b83b5c7b1cebb25af3ec3d68c110e34311&w=740'); }
+  85% { background-image: url('https://img.freepik.com/free-photo/modern-monitor-elegant-table_23-2150706425.jpg?t=st=1728277987~exp=1728281587~hmac=b11aa21605c932d12bbf4870d46f3d249a31bf074bbabb93ca5e82def760cdeb&w=740'); }
+  100% { background-image: url('https://img.freepik.com/free-photo/3d-black-friday-celebration_23-2151848871.jpg?t=st=1728277792~exp=1728281392~hmac=1533c1ded88f2738f95eaa5209cc6de8ef6a6d69b85da3e95fb8888a10ca44e3&w=826'); }
+}
+
+.animated-background {
+  position: relative;
+  animation: backgroundChange 8s infinite;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.animated-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.308); 
+  z-index: 1;
+}
+
+.animated-background > * {
+  position: relative;
+  z-index: 2;
+}
+.logo-text {
+  font-family: 'Poppins', sans-serif; /* You can choose another stylish font */
+  font-weight: 900; /* Extra bold */
+  font-size: 1.5rem; /* Adjust as needed */
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #e1e786, #e391ea); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  text-transform: uppercase; /* Makes the text uppercase */
+  letter-spacing: 1px; /* Adds spacing between letters */
+}
