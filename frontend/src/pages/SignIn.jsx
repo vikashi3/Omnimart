@@ -53,7 +53,7 @@ function SignIn() {
 
   return (
     <div className="relative bg-slate-200 min-h-screen flex p-4 md:p-12 lg:p-28 justify-center items-center">
-    <Link to="/adminSignin" className="absolute top-5 right-5 hover:bg-rose-500 py-2 px-4 font-md rounded-md bg-rose-600 text-white">Admin</Link>
+    {/* <Link to="/adminSignin" className="absolute top-5 right-5 hover:bg-rose-500 py-2 px-4 font-md rounded-md bg-rose-600 text-white">Admin</Link> */}
       <div className="bg-white px-6 py-4 h-96 sm:h-auto md:px-8 md:py-6 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm">
         <h2 className="text-2xl md:text-3xl font-bold text-rose-400 mb-6 md:mb-10 text-center">
           Sign In
